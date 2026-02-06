@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, Building2 } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-sm relative overflow-hidden">
+    <nav className="bg-white shadow-sm relative overflow-hidden sticky top-0 z-50">
       {/* Orange diagonal background */}
       <div 
         className="absolute top-0 right-0 h-full bg-orange-500"
@@ -31,9 +31,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            {/* <svg className="w-8 h-8 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"/>
-            </svg> */}
+            <div className="bg-orange-500 p-2 rounded-lg mr-2">
+              <Building2 className="w-6 h-6 text-white" />
+            </div>
             <span className="ml-1 text-2xl font-bold tracking-tight">
               <span className="text-orange-500">Patil</span>
               <span className="text-slate-800">Associates</span>

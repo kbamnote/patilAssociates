@@ -19,7 +19,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
+      {/* Show Header only on landing page */}
+      {location.pathname === '/' && <Header />}
       <Navbar />
       <main className="min-h-screen">
         {children}

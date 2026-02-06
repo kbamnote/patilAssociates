@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Heart, Instagram, ChevronUp } from 'lucide-react';
+import { Facebook, Twitter, Heart, Instagram, ChevronUp, Building2 } from 'lucide-react';
 import footerBg from '../../assets/footer-bg.jpg';
 
 const Footer = () => {
@@ -38,9 +38,9 @@ const Footer = () => {
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo */}
             <div className="flex items-center justify-center mb-6">
-              {/* <svg className="w-10 h-10 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"/>
-              </svg> */}
+              <div className="bg-orange-500 p-2.5 rounded-lg mr-2">
+                <Building2 className="w-7 h-7 text-white" />
+              </div>
               <span className="ml-2 text-3xl font-bold tracking-tight">
                 <span className="text-orange-500">Patil</span>
                 <span className="text-white">Associates</span>

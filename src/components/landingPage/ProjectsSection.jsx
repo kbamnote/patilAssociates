@@ -14,7 +14,7 @@ const ProjectsSection = () => {
       title: 'Grand Horizon Hotel & Suites',
     },
     {
-      image: 'https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?w=800&q=80',
+      image: 'https://im.proptiger.com/1/3418530/6/sunrise-heights-elevation-156841801.jpeg',
       category: 'REAL ESTATE',
       title: 'Sunrise Heights - Premium Residences',
     },

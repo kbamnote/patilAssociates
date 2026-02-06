@@ -1,5 +1,6 @@
 import React from 'react';
 import { Lightbulb } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import bannerImg from '../../assets/banner-bg-1.jpg';
 
 const HeroSection = () => {
@@ -28,12 +29,16 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full text-sm uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1">
-            Explore Our Ventures
-          </button>
-          <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 font-bold px-10 py-4 rounded-full text-sm uppercase tracking-wider transition-all duration-300 shadow-lg transform hover:-translate-y-1">
-            Get in Touch
-          </button>
+          <Link to="/ventures">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full text-sm uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1">
+              Explore Our Ventures
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 font-bold px-10 py-4 rounded-full text-sm uppercase tracking-wider transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+              Get in Touch
+            </button>
+          </Link>
         </div>
       </div>
 
