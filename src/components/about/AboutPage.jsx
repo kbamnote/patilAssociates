@@ -54,6 +54,72 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* Founder Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">Leadership & Founder</h2>
+              <div className="w-20 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left - Image Placeholder */}
+              <div className="order-2 lg:order-1">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg transform rotate-3"></div>
+                  <div className="relative bg-slate-800 rounded-lg overflow-hidden shadow-2xl">
+                    <div className="aspect-[4/5] relative">
+                      <div className="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+                        <div className="text-center text-white">
+                          <Building2 className="w-24 h-24 mx-auto mb-4 opacity-50" />
+                          <p className="text-lg font-semibold opacity-75">Balu Patil</p>
+                          <p className="text-sm opacity-50">Founder & Chairman</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right - Content */}
+              <div className="order-1 lg:order-2">
+                <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-orange-500">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Balu Patil</h3>
+                  <p className="text-orange-600 font-semibold mb-6 text-lg">Founder & Chairman</p>
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    <strong>Balu Patil</strong> is the visionary founder and driving force behind Patil Associates Group. 
+                    With a deep commitment to excellence and an unwavering focus on quality, he has built the organization 
+                    from the ground up into a respected name across multiple industries.
+                  </p>
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Under his leadership, Patil Associates has expanded into <strong>Hotels & Hospitality</strong>, 
+                    <strong> Restaurant & Bar</strong>, and <strong>Properties & Real Estate</strong>, maintaining 
+                    the highest standards in each vertical. His philosophy of controlled growth and customer-first approach 
+                    has been instrumental in establishing the group's reputation for reliability and premium service.
+                  </p>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    Balu Patil believes that true success is measured not just by business achievements, but by the lasting 
+                    relationships built with customers, employees, and communities. His values of <strong>integrity, transparency, 
+                    and sustainable growth</strong> continue to guide every decision and shape the future of Patil Associates Group.
+                  </p>
+
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <p className="text-sm text-gray-500 italic">
+                      "Quality over quantity, relationships over transactions, and legacy over short-term gains."
+                    </p>
+                    <p className="text-sm text-gray-700 font-semibold mt-2">— Balu Patil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3D Divider */}
       <ThreeDivider type="rings" />
 

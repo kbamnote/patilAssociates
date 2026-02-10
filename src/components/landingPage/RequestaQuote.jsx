@@ -229,7 +229,7 @@ const RequestaQuote = () => {
                     <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold mb-1">Phone:</p>
-                      <p className="text-sm">+91 98765 43210</p>
+                      <p className="text-sm">+91 77092 44142</p>
                     </div>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ const RequestaQuote = () => {
                     <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold mb-1">Email:</p>
-                      <p className="text-sm">info@patilassociates.com</p>
+                      <p className="text-sm">info@patilassociates.in</p>
                     </div>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ const RequestaQuote = () => {
                     <div>
                       <p className="font-semibold mb-1">Head Office:</p>
                       <p className="text-sm">Patil Associates Tower,</p>
-                      <p className="text-sm">Business Bay, Pune - 411001</p>
+                      <p className="text-sm">Nagpur, Maharashtra - 440001</p>
                     </div>
                   </div>
                 </div>

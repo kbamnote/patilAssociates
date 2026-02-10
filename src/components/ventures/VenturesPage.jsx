@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { ExternalLink, UtensilsCrossed, Hotel, Building2, CheckCircle2, Wine, Coffee, MapPin, Bed, Users as UsersIcon, Briefcase, Home, TrendingUp, Shield } from 'lucide-react';
 import ThreeBackground from '../common/ThreeBackground';
 import ThreeDivider from '../common/ThreeDivider';
+import { BUSINESSES, externalLinkProps } from '../../config/businessConfig';
 
 const VenturesPage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const VenturesPage = () => {
       id: "hospitality",
       title: "Hotels & Hospitality",
       subtitle: "Experience Luxury & Comfort",
+      url: BUSINESSES.hotels.url,
       description: {
         intro: "Patil Associates takes pride in offering world-class hospitality services that set new standards for luxury and comfort. Our hotels are meticulously designed to provide the perfect blend of modern amenities, aesthetic charm, and functional excellence for both business and leisure travelers.",
         comfortDesign: "Every property reflects our commitment to comfort-driven design, featuring spacious rooms with premium furnishings, state-of-the-art technology, and thoughtfully curated interiors. From plush bedding to intelligent climate control, every detail is crafted to ensure guests enjoy a truly restorative experience.",
@@ -36,6 +38,7 @@ const VenturesPage = () => {
       id: "dining",
       title: "Restaurant & Bar",
       subtitle: "A Culinary Journey",
+      url: BUSINESSES.bars.url,
       description: {
         intro: "Our restaurant and bar vertical is dedicated to creating premium dining experiences that celebrate culinary artistry and exceptional hospitality. We combine modern, sophisticated ambiance with exquisite cuisine crafted by expert chefs who source the finest ingredients.",
         conceptAmbience: "Each establishment is designed to offer a unique atmosphere—whether it's an intimate family dinner, a vibrant nightlife experience, or a sophisticated corporate lunch. Our interiors blend contemporary design with warm lighting and comfortable seating, creating spaces where guests feel both relaxed and inspired.",
@@ -59,6 +62,7 @@ const VenturesPage = () => {
       id: "real-estate",
       title: "Properties & Real Estate",
       subtitle: "Building the Future",
+      url: BUSINESSES.properties.url,
       description: {
         intro: "In the real estate sector, Patil Associates stands for trust, quality construction, and long-term value creation. We develop residential and commercial projects that offer modern living spaces, strategic business locations, and sustainable infrastructure designed for the future.",
         residentialCommercial: "Our portfolio includes premium apartments, gated communities, and commercial complexes tailored to meet the evolving needs of families and businesses. Each project is conceived with a deep understanding of market demand, lifestyle trends, and urban development patterns, ensuring relevance and appeal for years to come.",
@@ -164,9 +168,13 @@ const VenturesPage = () => {
                       ))}
                     </div>
 
-                    <button className={`flex items-center gap-2 font-bold transition-all hover:gap-3 ${venture.color} text-lg`}>
-                      Learn More <ExternalLink size={20} />
-                    </button>
+                    <a 
+                      href={venture.url}
+                      {...externalLinkProps}
+                      className={`inline-flex items-center gap-2 font-bold transition-all hover:gap-3 ${venture.color} text-lg`}
+                    >
+                      Visit Website <ExternalLink size={20} />
+                    </a>
                   </div>
 
                 </div>

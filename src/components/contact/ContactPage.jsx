@@ -39,7 +39,7 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">Our Offce</h4>
-                                        <p className="text-gray-600">Off. No. 101, Business Bay, <br /> Pune, Maharashtra 411045, India</p>
+                                        <p className="text-gray-600">Off. No. 101, Business Bay, <br /> Nagpur, Maharashtra 440001, India</p>
                                     </div>
                                 </div>
 
@@ -49,7 +49,7 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">Phone Number</h4>
-                                        <p className="text-gray-600">+91 98765 43210</p>
+                                        <p className="text-gray-600">+91 77092 44142</p>
                                         <p className="text-gray-600">+91 20 1234 5678</p>
                                     </div>
                                 </div>
@@ -60,8 +60,8 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">Email Address</h4>
-                                        <p className="text-gray-600">info@patilassociates.com</p>
-                                        <p className="text-gray-600">sales@patilassociates.com</p>
+                                        <p className="text-gray-600">info@patilassociates.in</p>
+                                        <p className="text-gray-600">sales@patilassociates.in</p>
                                     </div>
                                 </div>
                             </div>

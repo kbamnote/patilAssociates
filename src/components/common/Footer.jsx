@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Heart, Instagram, ChevronUp, Building2 } from 'lucide-react';
 import footerBg from '../../assets/footer-bg.jpg';
+import { FOOTER_DISCLAIMER } from '../../config/businessConfig';
 
 const Footer = () => {
   const socialLinks = [
@@ -74,10 +75,15 @@ const Footer = () => {
       <div className="bg-black border-t border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            {/* Copyright */}
-            <p className="text-gray-500 text-sm">
-              Copyright © 2025 <span className="text-white">Patil Associates</span> | All Rights Reserved
-            </p>
+            {/* Disclaimer and Copyright */}
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-xs mb-1">
+                {FOOTER_DISCLAIMER}
+              </p>
+              <p className="text-gray-500 text-sm">
+                Copyright © 2025 <span className="text-white">Patil Associates</span> | All Rights Reserved
+              </p>
+            </div>
 
             {/* Links */}
             <div className="flex flex-wrap items-center justify-center gap-6">

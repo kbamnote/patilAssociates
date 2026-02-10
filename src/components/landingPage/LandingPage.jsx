@@ -5,6 +5,7 @@ import Header from "../common/Header";
 import FeaturesSection from "./FeaturesSection";
 import AboutSection from "./AboutSection";
 import OurServices from "./OurServices";
+import OurBusinesses from "./OurBusinesses";
 import ProjectsSection from "./ProjectsSection";
 import DiscoverSection from "./DiscoverSection";
 import RequestaQuote from "./RequestaQuote";
@@ -17,6 +18,7 @@ const LandingPage = () => {
     <>
       <HeroSection />
       <AboutSection/>
+      <OurBusinesses/>
       <FeaturesSection/>
       {/* <OurServices/> */}
       <ProjectsSection/>
